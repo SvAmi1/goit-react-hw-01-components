@@ -1,6 +1,6 @@
 // import user from "../data/user.json";
 
-   import { Description, Avatar, Name, Tag, Location, Profile } from "./Profile.styled";
+   import { Description, Avatar, Name, Tag, Location, Profile, UserStats, UserStatsItem, UserStatsParam, UserParamValue } from "./Profile.styled";
 
 export const ProfileSM = ({ user: {username, avatar, tag, location, stats: {followers, views, likes}}}) => {
   return ( 
@@ -12,20 +12,20 @@ export const ProfileSM = ({ user: {username, avatar, tag, location, stats: {foll
       <Location>{location}</Location>
     </Description>
 
-    <ul>
-      <li>
-        <span>Followers</span>
-        <span>{followers}</span>
-      </li>
-      <li>
-        <span>Views</span>
-        <span>{views}</span>
-      </li>
-      <li>
-        <span>Likes</span>
-        <span>{likes}</span>
-      </li>
-    </ul>
+    <UserStats>
+      <UserStatsItem>
+        <UserStatsParam>Followers</UserStatsParam>
+        <UserParamValue>{followers}</UserParamValue>
+      </UserStatsItem>
+      <lUserStatsItemi>
+        <UserStatsParam>Views</UserStatsParam>
+        <UserParamValue>{views}</UserParamValue>
+      </lUserStatsItemi>
+      <UserStatsItem>
+        <UserStatsParam>Likes</UserStatsParam>
+        <UserParamValue>{likes}</UserParamValue>
+      </UserStatsItem>
+      </UserStats>
   </Profile>
   )
 }
