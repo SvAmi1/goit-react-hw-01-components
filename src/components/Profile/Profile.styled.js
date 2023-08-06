@@ -2,14 +2,14 @@ import styled from 'styled-components';
 
 export const Profile = styled.div`
 display: flex;
-alignItems: 'center';
+/* alignItems: 'center'; */
 /* backgroundColor: blue; */
 `;
 
 export const Description = styled.div`
 display: flex;
-alignItems: 'center';
-backgroundColor: blue;
+/* alignItems: 'center';
+backgroundColor: blue; */
 `;
 
 export const Avatar = styled.img`
