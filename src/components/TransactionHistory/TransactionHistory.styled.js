@@ -32,6 +32,9 @@ export const HeadName = styled.th`
  padding: 10px 0;
  border: 1px solid gray;
   border-radius: 6px;
+  &:hover {
+    scale: 1.05;
+  }
 `;
 
 export const TableRow = styled.tr`
@@ -44,4 +47,7 @@ export const TableData = styled.td`
   border-radius: 6px;
   background-color: whitesmoke;
   min-width: 133px;
+  &:hover {
+    scale: 1.05;
+  }
 `;
