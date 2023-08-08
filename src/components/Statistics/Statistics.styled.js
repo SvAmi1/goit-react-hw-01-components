@@ -26,7 +26,7 @@ export const StatsItem = styled.li`
   display: flex;
   flex-direction: column;
   width: 100%;
-  margin: 0px auto 10px;
+  margin: 10px auto;
   font-size: 14px;
   font-weight: 600;
   padding:15px;

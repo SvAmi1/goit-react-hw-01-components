@@ -4,7 +4,7 @@ import { StatsItem, StatsList, Title, Wrapper } from "./Statistics.styled";
 export const Statistics = ({ items,title }) => {
     return (
         <Wrapper>
-           <Title>{title}Upload stats</Title>
+           {title && <Title>{title}</Title>}
 
             <StatsList>
         {items.map((item) => (
